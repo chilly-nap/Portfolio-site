@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1 id="typed-header" class="typewriter"></h1> <!-- Dynamic Header -->
+        <p id="typed-subheader"></p> <!-- Dynamic Subheader -->
+    </header>
+
+    <!-- Top Buttons -->
+    <div class="top-buttons">
+        <a href="https://github.com/chilly-nap/" target="_blank" class="button top-button">GitHub</a>
+    </div>
+
+    <!-- Map Navigation -->
+    <div class="map">
+        <div class="level" onclick="jumpToSection('about')">About</div>
+        <div class="level" onclick="jumpToSection('tools')">Tools</div>
+        <div class="level" onclick="jumpToSection('projects')">Projects</div>
+        <div class="level" onclick="jumpToSection('contact')">Contact</div>
+    </div>
+
+    <!-- Progress Circle -->
+    <div class="progress-circle">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="28" cx="30" cy="30" />
+        </svg>
+    </div>
+
+    <!-- Dynamic Sections -->
+    <!-- Sections for 'About', 'Tools', 'Projects', and 'Contact' will be added dynamically via script.js -->
+
+</body>
+
+</html>
